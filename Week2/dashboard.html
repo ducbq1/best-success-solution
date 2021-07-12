@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/d3pie.min.js"></script>
+</head>
+
+<body>
+    <nav class="navigator">
+        <div class="menu-toggle">
+            <input type="checkbox" name="" id="">
+            <span></span><span></span><span></span>
+            <div class="menu">
+                <a href="#" class="active"><i class="fas fa-columns"></i> Dashboard</a>
+                <a href="./logs.html"><i class="fas fa-history"></i> Logs</a>
+                <a href="./settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+        <section>
+            <div class="device-manager">Device Manager <i class="fas fa-user-circle"></i></div>
+            <div class="welcome">
+                <p id="account" data-value="1">Welcome Guest</p>
+                <a href="#" id="exit">Exit</a>
+            </div>
+        </section>
+        <table>
+            <caption>the best table ever in the world</caption>
+            <thead>
+                <tr>
+                    <th>Devices</th>
+                    <th>MAC Address</th>
+                    <th>IP</th>
+                    <th>Created Date</th>
+                    <th>Power Consumption (kW/h)</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                <tr>
+                    <td>TV</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>127.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">50</td>
+                </tr>
+                <tr>
+                    <td>Washer</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>127.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">60</td>
+                </tr>
+                <tr>
+                    <td>Refrigerator</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>127.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">80</td>
+                </tr>
+                <tr>
+                    <td>Visual Basic</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>127.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">100</td>
+                </tr>
+                <tr>
+                    <td>Scheme</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>27.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">70</td>
+                </tr>
+                <tr id="dataTest">
+                    <td>Rust</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>27.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">40</td>
+                </tr>
+                <tr id="dataTest">
+                    <td>Selling Fan</td>
+                    <td>00:1B:44:11:3A:B7</td>
+                    <td>27.0.0.2</td>
+                    <td>31 / 5 / 2021</td>
+                    <td class="data">30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total</td>
+                    <td id="dataTotal">430</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section class="data-section">
+            <div class="pieChart" id="pieChart">
+            </div>
+            <div class="form-input">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="ip" id="ip" placeholder="IP">
+                <input type="number" name="power" id="power" placeholder="Power Consumption">
+                <input type="button" id="button" value="ADD DEVICE">
+            </div>
+        </section>
+    </main>
+
+
+<script src="./js/dashboard.js"></script>
+   
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="form-style">
+        <form action="./dashboard.html" method="post" id="form" class="form">
+            <h1>error system</h1>
+            <div class="username-field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder=" username" required>
+            </div>
+            <div class="password-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder=" password" required minlength="3"
+                    oninvalid="this.setCustomValidity('Hơi bị chiến đấy!')">
+
+                <!-- <input type="password" name="password" id="password" placeholder=" password" required minlength="3" oninvalid="this.setCustomValidity('Short Password!')"> -->
+            </div>
+            <div class="button-field">
+                <input id="button" type="submit" value="LOGIN">
+                <a href="#" id="create">or create new account</a>
+            </div>
+        </form>
+    </div>
+<script src="./js/main.js"></script>
+    
+</body>
+
+</html>
