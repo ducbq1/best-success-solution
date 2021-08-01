@@ -1,0 +1,21 @@
+.bss-b2b-container {
+}
+.bss-b2b-container .auto-tag-condition-choices fieldset {
+  margin-bottom: 10px;
+}
+.bss-b2b-container .auto-tag-condition-choices fieldset legend {
+  width: 30%;
+  padding: 5px 0 0;
+}
+.bss-b2b-container .auto-tag-condition-choices fieldset ul {
+  width: 60%;
+}
+.bss-b2b-container .auto-tag-condition-choices fieldset legend,
+.bss-b2b-container .auto-tag-condition-choices fieldset ul {
+  float: left;
+}
+
+.bss-b2b-container .auto-tag-condition-choices fieldset ul li {
+  display: inline;
+  margin: 0 15px;
+}

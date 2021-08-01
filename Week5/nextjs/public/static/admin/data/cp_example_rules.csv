@@ -1,0 +1,6 @@
+name,priority,status,apply_to,customer_emails,customer_tags,product_condition_type,product_titles,product_collections,product_tags,discount_type,discount_value
+Test 1,0,Disable,All,,,All products,,,,apply a price to selected products,12.2
+Test 2,3,Enable,Logged-in Customers,,,Specific Products,"Virtual product, April Ring",,,decrease a fixed amount of the original prices of selected products,13.45
+Test 3,2,Enable,Not-logged-in customers,,,Product collections,,Home page,Woman,decrease the original prices of selected products by a percentage,33.33
+Test 4,1,Disable,Specific customers,"abc@gmail.com,test123@gmail.com",,Product Tags,,,"Woman,Hat,Clothes",decrease the original prices of selected products by a percentage,18.22
+Test 5,1,Enable,Customer tags,,"woman,man",All products,,,,apply a price to selected products,30

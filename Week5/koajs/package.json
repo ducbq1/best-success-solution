@@ -1,0 +1,29 @@
+{
+  "name": "shopify-product-option-api",
+  "version": "1.0.0",
+  "description": "product-option-api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ducbq173023@bitbucket.org/bsssupport/shopify-product-option-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "teams-master",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/bsssupport/shopify-product-option-api#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  }
+}
